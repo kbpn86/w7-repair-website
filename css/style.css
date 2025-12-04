@@ -1,0 +1,32 @@
+/* 浮動 QR 視窗外層 */
+#qr-popup {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 160px;
+    padding: 10px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    display: none;    /* 預設不顯示，3 分鐘後出現 */
+    z-index: 9999;
+    text-align: center;
+}
+
+/* QR 圖片大小固定，不跑版 */
+#qr-popup img {
+    width: 140px;
+    height: auto;
+}
+
+/* 關閉按鈕 */
+#qr-close {
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+#qr-close:hover {
+    color: black;
+}
